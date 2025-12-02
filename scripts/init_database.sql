@@ -24,6 +24,12 @@ BEGIN
 END;
 GO
 
+/*
+	SET SINGLE_USER: This restricts access to the DataWarehouse database so that only one user can connect at a time
+	WITH ROLLBACK IMMEDIATE: This is a termination option that tells SQL Server to immediately terminate any other existing connections to the database and roll back any open transactions without waiting for them to complete.
+*/
+	
+
 -- Create the 'DataWarehouse' database
 CREATE DATABASE DataWarehouse;
 GO
